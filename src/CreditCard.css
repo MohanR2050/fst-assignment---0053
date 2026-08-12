@@ -1,0 +1,212 @@
+.cards-container {
+  position: relative;
+  width: 470px;
+  height: 500px;
+}
+
+.credit-card {
+  width: 355px;
+  height: 200px;
+
+  border-radius: 10px;
+
+  position: absolute;
+  overflow: hidden;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.front-card {
+  top: 20px;
+  left: 0;
+
+  background: linear-gradient(
+    120deg,
+    #4b18dc 0%,
+    #7935d5 45%,
+    #ca5c9c 100%
+  );
+
+  color: white;
+
+  padding: 23px;
+
+  z-index: 2;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-chip {
+  width: 40px;
+  height: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #eeeeee,
+    #bcbcbc
+  );
+
+  border-radius: 5px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.chip-line {
+  position: absolute;
+  background: #999;
+}
+
+.line-one {
+  width: 100%;
+  height: 1px;
+  top: 10px;
+}
+
+.line-two {
+  width: 100%;
+  height: 1px;
+  top: 19px;
+}
+
+.line-three {
+  width: 1px;
+  height: 100%;
+  left: 20px;
+}
+
+.contactless {
+  font-size: 18px;
+  font-weight: bold;
+  transform: rotate(90deg);
+  letter-spacing: -5px;
+}
+
+.card-number {
+  margin-top: 32px;
+
+  font-size: 18px;
+  letter-spacing: 3px;
+
+  text-align: center;
+  white-space: nowrap;
+}
+
+.front-card-bottom {
+  position: absolute;
+
+  left: 23px;
+  right: 23px;
+  bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.front-card-bottom span {
+  display: block;
+
+  font-size: 7px;
+  letter-spacing: 1px;
+
+  opacity: 0.75;
+
+  margin-bottom: 5px;
+}
+
+.front-card-bottom strong {
+  display: block;
+
+  font-size: 10px;
+  font-weight: normal;
+
+  letter-spacing: 0.5px;
+}
+
+.back-card {
+  top: 228px;
+  left: 50px;
+
+  background: #eeeeee;
+
+  z-index: 1;
+
+  color: #555;
+}
+
+.magnetic-strip {
+  position: absolute;
+
+  top: 20px;
+  left: 0;
+
+  width: 100%;
+  height: 38px;
+
+  background: #111111;
+}
+
+.cvc-label {
+  position: absolute;
+
+  top: 87px;
+  right: 30px;
+
+  font-size: 7px;
+  color: #777;
+}
+
+.cvc-box {
+  position: absolute;
+
+  top: 99px;
+  left: 32px;
+  right: 32px;
+
+  height: 26px;
+
+  background: #b8bcc0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-right: 10px;
+
+  font-size: 9px;
+  font-style: italic;
+
+  color: #555;
+}
+
+.signature-lines {
+  position: absolute;
+
+  top: 137px;
+  left: 70px;
+
+  width: 150px;
+}
+
+.signature-lines span {
+  display: block;
+
+  height: 2px;
+
+  background: #a5a5a5;
+
+  margin-bottom: 5px;
+}
+
+.signature-lines span:nth-child(2) {
+  width: 100px;
+}
+
+.signature-lines span:nth-child(3) {
+  width: 80px;
+}
